@@ -25,15 +25,28 @@ This is a comprehensive portal designed to collect, analyze, and visualize stude
 
 ### Steps
 
-1. Set up the MySQL database:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/FeedbackHub.git
+    cd FeedbackHub
+    ```
+2. 2. Install the required dependencies:
+    ```sh
+    npm install
+    ```
+3. Set up the MySQL database:
     - Create a new database.
     - Import the provided SQL scripts to set up the tables and initial data.
-2. Start the server:
+      
+4. Set up Twilio API credentials:
+    - Replace placeholders in `server/routes.js` with your Twilio Account SID, Auth Token, and phone number.
+      
+5. Start the server:
     ```sh
     node server/app.js
     ```
 
-3. Open `form.html` in your browser to start using the application.
+6. Open `form.html` in your browser to start using the application.
 
 ## Usage
 
