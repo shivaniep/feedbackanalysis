@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminDash.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="frame1">
+            <div class="logo">
+                <img src="logo2.png" alt="Logo 2" class="logo-img">
+            </div>
+            <div class="welcome-message">
+                <h2 id="admin-text">Welcome Admin!</h2>
+                <img src="adminlogo.png" alt="Admin Logo" class="admin-logo-img">
+                <p>User ID: <span id="user-id-display"></span></p>
+            </div>
+            <div class="logout">
+                <button>Log out</button>
+            </div>
+            <div class="semester-list">
+                <h3>Semesters</h3>
+                <ul id="semester-list">
+                    <li class="semester-item" data-semester="1">Semester 1</li>
+                    <li class="semester-item" data-semester="2">Semester 2</li>
+                    <li class="semester-item" data-semester="3">Semester 3</li>
+                    <li class="semester-item" data-semester="4">Semester 4</li>
+                    <li class="semester-item" data-semester="5">Semester 5</li>
+                    <li class="semester-item" data-semester="6">Semester 6</li>
+                    <li class="semester-item" data-semester="7">Semester 7</li>
+                    <li class="semester-item" data-semester="8">Semester 8</li>
+                </ul>
+            </div>
+        </div>
+        <div class="frame2">
+            <div class="frame2-content"></div>
+            <div class="visualisation"></div>
+        </div>
+    </div>
+
+    <script src="adminDash.js" defer></script>
+
+</body>
+</html>

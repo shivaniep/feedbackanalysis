@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap">
+</head>
+<body>
+    <div class="pagina-principal">
+        <div class="logo-wrapper">
+            <img class="logo-icon" loading="lazy" alt="Logo" src="logo2.png">
+        </div>
+        <div class="form-group">
+            User ID<input type="text" id="user-id" class="textbox">
+        </div>
+        <div class="form-group">
+            Password<input type="password" id="password" class="textbox">
+        </div>
+        <div class="form-group">
+            <button class="button" id="login">Login</button>
+            <button class="button" id="reset-password">Reset Password</button>
+        </div>
+    </div>
+
+    <div id="otpModal" class="modal">
+        <div class="modal-content">
+          <button id="closeBtn" class="button">Close</button>
+          <h2>Reset Password</h2>
+          <p>Enter your phone number to receive OTP:</p>
+          <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+          <button id="sendOtpBtn" class="button">Send OTP</button>
+          <p>Enter OTP received:</p>
+          <input type="text" id="otpInput" placeholder="Enter OTP">
+          <button id="verifyOtpBtn" class="button">Verify OTP</button>
+        </div>
+      </div>
+    
+    <script src="adminlogin.js" defer></script>
+
+</body>
+</html>
