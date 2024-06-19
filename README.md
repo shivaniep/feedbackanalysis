@@ -27,8 +27,8 @@ This is a comprehensive portal designed to collect, analyze, and visualize stude
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/FeedbackHub.git
-    cd FeedbackHub
+    git clone https://github.com/shivaniep/feedbacknalysis.git
+    cd feedbackanalysis
     ```
 2. 2. Install the required dependencies:
     ```sh
@@ -39,7 +39,7 @@ This is a comprehensive portal designed to collect, analyze, and visualize stude
     - Import the provided SQL scripts to set up the tables and initial data.
       
 4. Set up Twilio API credentials:
-    - Replace placeholders in `server/routes.js` with your Twilio Account SID, Auth Token, and phone number.
+    - Replace placeholders in `server/.env` with your Twilio Account SID, Auth Token, and phone number.
       
 5. Start the server:
     ```sh
